@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湖南农业旅游</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/image.png" alt="湖南农旅logo">
+            </div>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#destinations">目的地</a></li>
+                <li><a href="#experiences">农事体验</a></li>
+                <li><a href="#products">特产商城</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>湘韵农旅</h1>
+            <p>体验传统农耕文化，品尝地道湘味美食</p>
+        </section>
+
+        <section id="destinations" class="photo-gallery">
+            <h2>精选目的地</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/xiangxi-tea.jpg" alt="湘西茶园">
+                    <div class="gallery-caption">
+                        <h3>湘西茶园</h3>
+                        <p>体验采茶文化，感受茶园风光</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/dongting-lake.jpg" alt="洞庭渔村">
+                    <div class="gallery-caption">
+                        <h3>洞庭渔村</h3>
+                        <p>探索渔业文化，品尝湖鲜美食</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2>特色农产品</h2>
+            <div class="products-container">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/tea.jpg" alt="湘西黄金茶">
+                        <span class="product-tag">热销</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>湘西黄金茶</h3>
+                        <p>高山云雾茶，清香持久</p>
+                        <div class="product-meta">
+                            <span class="price">¥168/斤</span>
+                            <button class="btn-buy">立即购买</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/rice.jpg" alt="湘米">
+                        <span class="product-tag">有机</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>洞庭湖有机米</h3>
+                        <p>稻花香米，颗粒饱满</p>
+                        <div class="product-meta">
+                            <span class="price">¥58/5斤</span>
+                            <button class="btn-buy">立即购买</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/orange.jpg" alt="湘西脐橙">
+                        <span class="product-tag">时令</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>湘西脐橙</h3>
+                        <p>甜美多汁，富含维C</p>
+                        <div class="product-meta">
+                            <span class="price">¥98/10斤</span>
+                            <button class="btn-buy">立即购买</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/sauce.jpg" alt="农家酱制品">
+                        <span class="product-tag">手工</span>
+                    </div>
+                    <div class="product-info">
+                        <h3>农家酱制品</h3>
+                        <p>传统工艺，原味醇厚</p>
+                        <div class="product-meta">
+                            <span class="price">¥45/瓶</span>
+                            <button class="btn-buy">立即购买</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="custom-route" class="route-section">
+            <h2>旅游路线定制</h2>
+            <div class="route-container">
+                <div class="route-options">
+                    <div class="route-card">
+                        <img src="images/route1.jpg" alt="精品一日游">
+                        <h3>精品一日游</h3>
+                        <p>湘西茶园采茶 + 农家美食体验</p>
+                        <span class="price">¥298/人起</span>
+                    </div>
+                    <div class="route-card">
+                        <img src="images/route2.jpg" alt="休闲两日游">
+                        <h3>休闲两日游</h3>
+                        <p>洞庭渔村 + 特色民宿住宿</p>
+                        <span class="price">¥598/人起</span>
+                    </div>
+                    <div class="route-card">
+                        <img src="images/route3.jpg" alt="深度三日游">
+                        <h3>深度三日游</h3>
+                        <p>农耕体验 + 美食品鉴 + 温泉度假</p>
+                        <span class="price">¥898/人起</span>
+                    </div>
+                </div>
+
+                <div class="custom-form">
+                    <h3>个性化定制</h3>
+                    <form>
+                        <div class="form-group">
+                            <label>出行天数</label>
+                            <select name="days" required>
+                                <option value="">请选择</option>
+                                <option value="1">1天</option>
+                                <option value="2">2天</option>
+                                <option value="3">3天</option>
+                                <option value="more">3天以上</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>出行人数</label>
+                            <input type="number" min="1" placeholder="请输入人数" required>
+                        </div>
+                        <div class="form-group">
+                            <label>出行日期</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label>预算范围</label>
+                            <select name="budget" required>
+                                <option value="">请选择</option>
+                                <option value="budget">经济型 (500元以下/人)</option>
+                                <option value="standard">标准型 (500-1000元/人)</option>
+                                <option value="luxury">豪华型 (1000元以上/人)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>特殊需求</label>
+                            <textarea placeholder="请输入您的特殊需求，如：素食、亲子活动等"></textarea>
+                        </div>
+                        <button type="submit">获取定制方案</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>联系我们</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>地址</h3>
+                        <p>湖南省长沙市芙蓉区xxx路xx号</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <h3>电话</h3>
+                        <p>0731-xxxxxxxx</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h3>邮箱</h3>
+                        <p>contact@hunanagriculture.com</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <h3>在线咨询</h3>
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="tel" placeholder="联系电话" required>
+                    <input type="email" placeholder="电子邮箱" required>
+                    <textarea placeholder="请输入您的留言" rows="5" required></textarea>
+                    <button type="submit">提交信息</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <div id="customPlanModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>您的定制方案</h2>
+            <div class="plan-details">
+                <div class="plan-header">
+                    <h3>行程概览</h3>
+                    <span class="total-price">总价：<strong>￥0</strong></span>
+                </div>
+                <div class="plan-schedule">
+                    <!-- 行程安排将通过JavaScript动态生成 -->
+                </div>
+                <div class="plan-includes">
+                    <h4>费用包含</h4>
+                    <ul>
+                        <li>专业导游服务</li>
+                        <li>行程中所列景点门票</li>
+                        <li>特色农家餐</li>
+                        <li>旅游意外保险</li>
+                    </ul>
+                </div>
+                <div class="plan-actions">
+                    <button class="btn-modify">修改方案</button>
+                    <button class="btn-confirm">确认预订</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('header-visible');
+            } else {
+                header.classList.remove('header-visible');
+            }
+        });
+
+        // 处理表单提交
+        document.querySelector('.custom-form form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // 获取表单数据
+            const days = this.querySelector('select[name="days"]').value;
+            const people = this.querySelector('input[type="number"]').value;
+            const date = this.querySelector('input[type="date"]').value;
+            const budget = this.querySelector('select[name="budget"]').value;
+
+            // 检查是否所有必要的值都已获取
+            console.log('Days:', days, 'People:', people, 'Date:', date, 'Budget:', budget);
+
+            if (days && people && date && budget) {
+                // 生成行程安排
+                const schedule = generateSchedule(days, budget);
+
+                // 显示方案
+                showCustomPlan(schedule, days, people, date, budget);
+            } else {
+                alert('请填写所有必要信息');
+            }
+        });
+
+        // 生成行程安排
+        function generateSchedule(days, budget) {
+            const activities = {
+                tea: ['茶园采茶体验', '茶艺品鉴', '茶园观光'],
+                food: ['农家美食制作', '特色湘菜品尝', '地方小吃探索'],
+                culture: ['农耕文化体验', '民俗表演欣赏', '手工艺制作'],
+                nature: ['田园观光', '果园采摘', '生态徒步']
+            };
+
+            let schedule = [];
+            for (let i = 0; i < days; i++) {
+                let daySchedule = {
+                    day: i + 1,
+                    activities: []
+                };
+
+                // 根据预算选择活动数量
+                const activitiesPerDay = budget === 'luxury' ? 4 : (budget === 'standard' ? 3 : 2);
+
+                // 随机选择活动
+                for (let category in activities) {
+                    if (daySchedule.activities.length < activitiesPerDay) {
+                        const activity = activities[category][Math.floor(Math.random() * activities[category].length)];
+                        daySchedule.activities.push(activity);
+                    }
+                }
+
+                schedule.push(daySchedule);
+            }
+
+            return schedule;
+        }
+
+        // 显示定制方案
+        function showCustomPlan(schedule, days, people, date, budget) {
+            const modal = document.getElementById('customPlanModal');
+            const scheduleContainer = modal.querySelector('.plan-schedule');
+
+            // 清空现有内容
+            scheduleContainer.innerHTML = '';
+
+            // 添加每天的行程
+            schedule.forEach(day => {
+                const dayElement = document.createElement('div');
+                dayElement.className = 'schedule-item';
+                dayElement.innerHTML = `
+                    <h4>第${day.day}天</h4>
+                    <p>${day.activities.join(' → ')}</p>
+                `;
+                scheduleContainer.appendChild(dayElement);
+            });
+
+            // 计算总价
+            const basePrice = budget === 'luxury' ? 1200 : (budget === 'standard' ? 800 : 500);
+            const totalPrice = basePrice * days * people;
+            modal.querySelector('.total-price strong').textContent = `￥${totalPrice}`;
+
+            // 显示模态框
+            modal.style.display = 'block';
+        }
+
+        // 关闭模态框
+        document.querySelector('.close-modal').addEventListener('click', function() {
+            document.getElementById('customPlanModal').style.display = 'none';
+        });
+
+        // 点击模态框外部关闭
+        window.addEventListener('click', function(e) {
+            const modal = document.getElementById('customPlanModal');
+            if (e.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+
+        // 修改方案按钮
+        document.querySelector('.btn-modify').addEventListener('click', function() {
+            document.getElementById('customPlanModal').style.display = 'none';
+        });
+
+        // 确认预订按钮
+        document.querySelector('.btn-confirm').addEventListener('click', function() {
+            alert('预订成功！我们的客服会尽快与您联系确认详情。');
+            document.getElementById('customPlanModal').style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
