@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湖南旅游路线定制 - 湖南农业旅游</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="route-custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/image.png" alt="湖南农旅logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我们</a></li>
+                <li><a href="index.html#destinations">目的地</a></li>
+                <li><a href="products.html">特产商城</a></li>
+                <li><a href="route-custom.html" class="active">旅游路线</a></li>
+                <li><a href="index.html#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="route-hero">
+            <div class="hero-content">
+                <h1>湖南旅游路线定制</h1>
+                <p>根据您的需求，定制专属的湖南旅游路线，享受独特的旅行体验。</p>
+                <button class="back-home" onclick="window.location.href='index.html'">
+                    <i class="fas fa-home"></i> 返回首页
+                </button>
+            </div>
+        </section>
+
+        <section class="route-customization">
+            <div class="container">
+                <h2>定制您的旅游路线</h2>
+                <form class="custom-form">
+                    <div class="form-group">
+                        <label for="travel-date">出行日期:</label>
+                        <input type="date" id="travel-date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="people">出行人数:</label>
+                        <input type="number" id="people" name="people" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="days">行程天数:</label>
+                        <input type="number" id="days" name="days" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="preferences">旅游偏好:</label>
+                        <select id="preferences" name="preferences">
+                            <option value="culture">文化体验</option>
+                            <option value="nature">自然风光</option>
+                            <option value="food">美食品鉴</option>
+                            <option value="activity">农事体验</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">生成定制方案</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- 定制方案模态框 -->
+        <div id="planModal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="plan-header">
+                    <h2>您的专属定制方案</h2>
+                    <div class="plan-summary"></div>
+                </div>
+                <div class="plan-details">
+                    <h3>费用说明</h3>
+                    <div class="includes-grid">
+                        <div class="include-item">
+                            <i class="fas fa-check-circle"></i>
+                            <div class="include-details">
+                                <h4>费用包含</h4>
+                                <ul>
+                                    <li>全程专业导游服务</li>
+                                    <li>行程中所列景点门票</li>
+                                    <li>每日三餐（特色农家菜）</li>
+                                    <li>特色民宿住宿</li>
+                                    <li>旅游意外保险</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="include-item">
+                            <i class="fas fa-times-circle"></i>
+                            <div class="include-details">
+                                <h4>费用不含</h4>
+                                <ul>
+                                    <li>往返交通费用</li>
+                                    <li>个人消费项目</li>
+                                    <li>行程外自选项目</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="plan-price">
+                        <div class="price-details">
+                            <h3>总价：<span class="total-price">¥0</span></h3>
+                        </div>
+                        <div class="plan-actions">
+                            <button class="btn-modify">修改方案</button>
+                            <button class="btn-confirm">确认预订</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/image.png" alt="湖南农旅logo">
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> 0731-xxxxxxxx</p>
+                    <p><i class="fas fa-envelope"></i> contact@hunanagriculture.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" title="微信"><i class="fab fa-weixin"></i></a>
+                    <a href="#" title="微博"><i class="fab fa-weibo"></i></a>
+                    <a href="#" title="抖音"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 湘韵农旅 版权所有</p>
+        </div>
+    </footer>
+
+    <script src="route-custom.js"></script>
+</body>
+
+</html>

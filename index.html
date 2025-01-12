@@ -17,18 +17,77 @@
             </div>
             <ul>
                 <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于我们</a></li>
                 <li><a href="#destinations">目的地</a></li>
-                <li><a href="#experiences">农事体验</a></li>
-                <li><a href="#products">特产商城</a></li>
+                <li><a href="products.html">特产商城</a></li>
+                <li><a href="route/route-custom.html">旅游路线</a></li>
                 <li><a href="#contact">联系我们</a></li>
             </ul>
         </nav>
+        <div class="announcement-section">
+            <div class="announcement-container">
+                <div class="announcement-icon">
+                    <i class="fas fa-volume-up"></i>
+                </div>
+                <div class="announcement-content">
+                    <div class="announcement-scroll">
+                        <p>【最新活动】端午节特惠：预订三日游立减200元！</p>
+                        <p>【温馨提示】茶园采摘季已开始，欢迎预约体验！</p>
+                        <p>【新品上市】湘西黄金茶新茶上市，限时特惠中！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
         <section id="hero">
-            <h1>湘韵农旅</h1>
-            <p>体验传统农耕文化，品尝地道湘味美食</p>
+            <div class="hero-content">
+                <h1>湘韵农旅</h1>
+                <p>体验传统农耕文化，品尝地道湘味美食</p>
+                <a href="#destinations" class="cta-button">开启旅程</a>
+            </div>
+        </section>
+
+        <section class="announcement-section">
+            <div class="announcement-container">
+                <div class="announcement-icon">
+                    <i class="fas fa-bullhorn"></i>
+                </div>
+                <div class="announcement-content">
+                    <div class="announcement-scroll">
+                        <p>【最新活动】端午节特惠：预订三日游立减200元！</p>
+                        <p>【温馨提示】茶园采摘季已开始，欢迎预约体验！</p>
+                        <p>【新品上市】湘西黄金茶新茶上市，限时特惠中！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>关于我们</h2>
+            <div class="about-container">
+                <div class="about-text">
+                    <p>湘韵农旅致力于推广湖南特色农业旅游，让游客体验独特的农耕文化，品味地道的湘味美食。</p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-leaf"></i>
+                            <h3>生态农业</h3>
+                            <p>体验绿色种植</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-utensils"></i>
+                            <h3>特色美食</h3>
+                            <p>品味湘式农家菜</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-home"></i>
+                            <h3>民宿体验</h3>
+                            <p>感受乡村生活</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="destinations" class="photo-gallery">
@@ -64,7 +123,10 @@
                         <p>高山云雾茶，清香持久</p>
                         <div class="product-meta">
                             <span class="price">¥168/斤</span>
+                        </div>
+                        <div class="product-actions">
                             <button class="btn-buy">立即购买</button>
+                            <button class="btn-more">了解更多</button>
                         </div>
                     </div>
                 </div>
@@ -79,7 +141,10 @@
                         <p>稻花香米，颗粒饱满</p>
                         <div class="product-meta">
                             <span class="price">¥58/5斤</span>
+                        </div>
+                        <div class="product-actions">
                             <button class="btn-buy">立即购买</button>
+                            <button class="btn-more">了解更多</button>
                         </div>
                     </div>
                 </div>
@@ -94,7 +159,10 @@
                         <p>甜美多汁，富含维C</p>
                         <div class="product-meta">
                             <span class="price">¥98/10斤</span>
+                        </div>
+                        <div class="product-actions">
                             <button class="btn-buy">立即购买</button>
+                            <button class="btn-more">了解更多</button>
                         </div>
                     </div>
                 </div>
@@ -109,143 +177,113 @@
                         <p>传统工艺，原味醇厚</p>
                         <div class="product-meta">
                             <span class="price">¥45/瓶</span>
+                        </div>
+                        <div class="product-actions">
                             <button class="btn-buy">立即购买</button>
+                            <button class="btn-more">了解更多</button>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="custom-route" class="route-section">
-            <h2>旅游路线定制</h2>
-            <div class="route-container">
-                <div class="route-options">
-                    <div class="route-card">
-                        <img src="images/route1.jpg" alt="精品一日游">
-                        <h3>精品一日游</h3>
-                        <p>湘西茶园采茶 + 农家美食体验</p>
-                        <span class="price">¥298/人起</span>
-                    </div>
-                    <div class="route-card">
-                        <img src="images/route2.jpg" alt="休闲两日游">
-                        <h3>休闲两日游</h3>
-                        <p>洞庭渔村 + 特色民宿住宿</p>
-                        <span class="price">¥598/人起</span>
-                    </div>
-                    <div class="route-card">
-                        <img src="images/route3.jpg" alt="深度三日游">
-                        <h3>深度三日游</h3>
-                        <p>农耕体验 + 美食品鉴 + 温泉度假</p>
-                        <span class="price">¥898/人起</span>
-                    </div>
-                </div>
-
-                <div class="custom-form">
-                    <h3>个性化定制</h3>
-                    <form>
-                        <div class="form-group">
-                            <label>出行天数</label>
-                            <select name="days" required>
-                                <option value="">请选择</option>
-                                <option value="1">1天</option>
-                                <option value="2">2天</option>
-                                <option value="3">3天</option>
-                                <option value="more">3天以上</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>出行人数</label>
-                            <input type="number" min="1" placeholder="请输入人数" required>
-                        </div>
-                        <div class="form-group">
-                            <label>出行日期</label>
-                            <input type="date" required>
-                        </div>
-                        <div class="form-group">
-                            <label>预算范围</label>
-                            <select name="budget" required>
-                                <option value="">请选择</option>
-                                <option value="budget">经济型 (500元以下/人)</option>
-                                <option value="standard">标准型 (500-1000元/人)</option>
-                                <option value="luxury">豪华型 (1000元以上/人)</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>特殊需求</label>
-                            <textarea placeholder="请输入您的特殊需求，如：素食、亲子活动等"></textarea>
-                        </div>
-                        <button type="submit">获取定制方案</button>
-                    </form>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact-section">
-            <h2>联系我们</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>地址</h3>
-                        <p>湖南省长沙市芙蓉区xxx路xx号</p>
+            <div class="container">
+                <h2>联系我们</h2>
+                <div class="contact-container">
+                    <!-- 左侧：联系信息 -->
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>公司地址</h3>
+                                <p>湖南省长沙市芙蓉区xxx路xx号</p>
+                                <a href="#" class="direction-link">获取导航 <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>联系电话</h3>
+                                <p>0731-xxxxxxxx</p>
+                                <p>服务时间：周一至周日 9:00-18:00</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>电子邮箱</h3>
+                                <p>contact@hunanagriculture.com</p>
+                                <p>商务合作：business@hunanagriculture.com</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <h3>电话</h3>
-                        <p>0731-xxxxxxxx</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <h3>邮箱</h3>
-                        <p>contact@hunanagriculture.com</p>
+
+                    <!-- 右侧：快速咨询 -->
+                    <div class="contact-form-wrapper">
+                        <div class="form-header">
+                            <h3>快速咨询</h3>
+                            <p>留下您的联系方式，我们会尽快与您联系</p>
+                        </div>
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label><i class="fas fa-user"></i></label>
+                                <input type="text" placeholder="您的姓名" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-phone"></i></label>
+                                <input type="tel" placeholder="联系电话" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-envelope"></i></label>
+                                <input type="email" placeholder="电子邮箱" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-comment"></i></label>
+                                <textarea placeholder="请输入您的留言" rows="4" required></textarea>
+                            </div>
+                            <button type="submit">
+                                发送信息 <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <h3>在线咨询</h3>
-                    <input type="text" placeholder="您的姓名" required>
-                    <input type="tel" placeholder="联系电话" required>
-                    <input type="email" placeholder="电子邮箱" required>
-                    <textarea placeholder="请输入您的留言" rows="5" required></textarea>
-                    <button type="submit">提交信息</button>
-                </form>
             </div>
         </section>
     </main>
-    <div id="customPlanModal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <h2>您的定制方案</h2>
-            <div class="plan-details">
-                <div class="plan-header">
-                    <h3>行程概览</h3>
-                    <span class="total-price">总价：<strong>￥0</strong></span>
-                </div>
-                <div class="plan-schedule">
-                    <!-- 行程安排将通过JavaScript动态生成 -->
-                </div>
-                <div class="plan-includes">
-                    <h4>费用包含</h4>
-                    <ul>
-                        <li>专业导游服务</li>
-                        <li>行程中所列景点门票</li>
-                        <li>特色农家餐</li>
-                        <li>旅游意外保险</li>
-                    </ul>
-                </div>
-                <div class="plan-actions">
-                    <button class="btn-modify">修改方案</button>
-                    <button class="btn-confirm">确认预订</button>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="social-links">
+                    <a href="#" title="微信"><i class="fab fa-weixin"></i></a>
+                    <a href="#" title="微博"><i class="fab fa-weibo"></i></a>
+                    <a href="#" title="抖音"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 湘韵农旅</p>
+        </div>
+    </footer>
+
     <script>
         window.addEventListener('scroll', function() {
             const header = document.querySelector('header');
+            const announcement = document.querySelector('.announcement-section');
+
             if (window.scrollY > 100) {
                 header.classList.add('header-visible');
+                announcement.style.transform = 'translateY(0)';
             } else {
                 header.classList.remove('header-visible');
+                announcement.style.transform = 'translateY(-100%)';
             }
         });
 
@@ -259,7 +297,7 @@
             const date = this.querySelector('input[type="date"]').value;
             const budget = this.querySelector('select[name="budget"]').value;
 
-            // 检查是否所有必要的值都已获取
+            // 检查是否所有必要值都已获取
             console.log('Days:', days, 'People:', people, 'Date:', date, 'Budget:', budget);
 
             if (days && people && date && budget) {
